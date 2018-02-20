@@ -8,8 +8,7 @@
         Garbage Collector (-XX:+PrintGC). These will be append to the console, so you will 
         see them in the mule_ee.log file. -->
 
-
-    <Appenders>
+   <Appenders>
         <RollingFile name="file" fileName="${sys:mule.home}${sys:file.separator}logs${sys:file.separator}maven-test.log" 
                  filePattern="${sys:mule.home}${sys:file.separator}logs${sys:file.separator}maven-test-%i.log">
             <PatternLayout pattern="%d [%t] %-5p %c - %m%n" />
